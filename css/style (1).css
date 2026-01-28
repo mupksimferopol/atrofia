@@ -1,0 +1,383 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    transform: scale(0.9);
+    transform-origin: top left;
+    width: 111.1%;
+    height: 111.1%;
+}
+body {
+    font-family: 'Exo 2', 'Rajdhani', sans-serif;
+    background-color: #0a0e17;
+    color: #e0f7ff;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.container h2{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+h1, h2, h3, .club-name {
+    font-family: 'Orbitron', 'Rajdhani', sans-serif;
+    font-weight: 700;
+}
+.header {
+    background-color: #050811;
+    padding: 15px 0;
+    border-bottom: 2px solid #00e5ff;
+    top: 0;
+    z-index: 1000;
+}
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.logo-placeholder {
+    width: 50px;
+    height: 50px;
+}
+.logo-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+}
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+.nav-link {
+    color: #e0f7ff;
+    text-decoration: none;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.nav-link:hover, .nav-link.active {
+    color: #00e5ff;
+    box-shadow: 0 0 10px rgba(0, 229, 255, 0.3);
+}
+.header-contact p {
+    font-family: 'Rajdhani', sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 15px;
+}
+.hero {
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+.hero-overlay {
+    max-width: 800px;
+}
+.hero-title {
+    font-size: 56px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 20px rgba(0, 229, 255, 0.7);
+}
+.hero-subtitle {
+    font-size: 21px;
+    margin-bottom: 30px;
+    color: #e0f7ff;
+}
+.cta-button {
+    display: inline-block;
+    background: linear-gradient( #00e5ff, #0099cc);
+    color: #0a0e17;
+    padding: 15px 40px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.cta-button:hover {
+    box-shadow: 0 0 25px rgba(0, 229, 255, 0.8);
+}
+.section-title {
+    text-align: center;
+    font-size: 40px;
+    margin:  0 40px;
+    color: #00e5ff;
+    text-shadow: 0 0 10px rgba(0, 229, 255, 0.5);
+}
+.section-title::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 3px;
+    background: #00e5ff;
+    margin: 15px auto;
+    box-shadow: 0 0 10px #00e5ff;
+}
+/* Карточки */
+.features-grid, .games-grid, .pricing-grid, .contact-grid, .package-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+.feature-card, .game-card, .price-card, .contact-card, .package-card {
+    background-color: #121a2b;
+    border-radius: 10px;
+    padding: 30px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 229, 255, 0.2);
+    flex: 0 0 300px;
+}
+.feature-card:hover, .game-card:hover, .price-card:hover, .contact-card:hover, .package-card:hover {
+    margin-top: -10px;
+    margin-bottom: 20px;
+    border-color: #00e5ff;
+    box-shadow: 0 10px 25px rgba(0, 229, 255, 0.2);
+}
+.feature-icon {
+    font-size: 40px;
+    color: #00e5ff;
+    margin-bottom: 20px;
+}
+.game-card {
+    background-size: cover;
+    background-position: center;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 25px;
+}
+.game-card h3 {
+    font-size: 29px;
+    margin-bottom: 10px;
+}
+.price-card {
+    text-align: center;
+}
+.price-header {
+    margin-bottom: 25px;
+}
+.price {
+    font-size: 48px;
+    font-family: 'Orbitron', sans-serif;
+    color: #00e5ff;
+    margin-top: 10px;
+}
+.price span {
+    font-size: 16px;
+    color: #8fa3c9;
+}
+.price-features {
+    list-style: none;
+    text-align: left;
+    margin: 25px 0;
+}
+.price-features li {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.price-features .fa-check {
+    color: #00e5ff;
+}
+.price-features .fa-times {
+    color: #ff3366;
+}
+.price-button {
+    display: inline-block;
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(45deg, #00e5ff, #0099cc);
+    color: #0a0e17;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    transition: all 0.3s ease;
+}
+.price-button:hover {
+    background: linear-gradient( #66f3ff, #00e5ff);
+}
+.contact-hero, .pricing-hero {
+    background: linear-gradient(rgba(10, 14, 23, 0.9), rgba(10, 14, 23, 0.9)),
+                url('https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3');
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px;
+    text-align: center;
+}
+.contact-hero h1, .pricing-hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #00e5ff;
+}
+.contact-icon {
+    font-size: 40px;
+    color: #00e5ff;
+    margin-bottom: 20px;
+}
+.map-placeholder {
+    background-color: #121a2b;
+    height: 400px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+    border: 1px solid rgba(0, 229, 255, 0.2);
+}
+.booking-form {
+    max-width: 600px;
+    margin: 40px auto;
+    display: grid;
+    gap: 20px;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+.form-group input, .form-group select {
+    padding: 15px;
+    background-color: #121a2b;
+    border: 1px solid rgba(0, 229, 255, 0.3);
+    border-radius: 5px;
+    color: #e0f7ff;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+.form-group input:focus, .form-group select:focus {
+    outline: none;
+    border-color: #00e5ff;
+    box-shadow: 0 0 10px rgba(0, 229, 255, 0.3);
+}
+.footer {
+    background-color: #050811;
+    padding: 50px 0 20px;
+    border-top: 2px solid #00e5ff;
+    margin-top: 50px;
+    
+}
+.footer-content {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
+    align-items: center;
+    justify-content: space-around;
+}
+.footer-logo h2 {
+    font-size: 32px;
+    color: #00e5ff;
+    margin-bottom: 10px;
+}
+.footer-info p {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.footer-social {
+    display: flex;
+    gap: 20px;
+    font-size: 29px;
+}
+.footer-social a {
+    color: #e0f7ff;
+    transition: all 0.3s ease;
+}
+.footer-social a:hover {
+    color: #00e5ff;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+.copyright {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(0, 229, 255, 0.2);
+    color: #8fa3c9;
+    font-size: 15px;
+}
+@media (max-width: 992px) {
+    .header .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .hero-title {
+        font-size: 40px;
+    }
+}
+@media (max-width: 768px) {
+    .nav-list {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    .hero-title {
+        font-size: 32px;
+    }
+    
+    .section-title {
+        font-size: 28px;
+    }
+}
+
+.game-card__cs2, .game-card__dota2, .game-card__valorant{
+    border-radius: 5px;
+    width: 315px;
+    height: 200px;
+}
+.game-card, .contact-card, .package-card, .feature-card{
+    text-align: center;
+}
+.package-card h3{
+    font-size: 140%;
+}
+.feature-card li{
+    list-style-type: none;
+}
+@keyframes colorChange {
+    0%,100% {
+        color: white;
+    }
+    50% {
+        color: #00e5ff;
+    }
+}
+.club-name{
+    text-decoration: none;
+    animation-name: colorChange;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
