@@ -352,6 +352,17 @@ h1, h2, h3, .club-name {
     }
 }
 
+
+@media (max-width: 378px) {
+    footer{
+        width: 100%;
+    }
+    .footer-content{
+        flex-wrap: wrap;
+        
+    }
+}
+
 .game-card__cs2, .game-card__dota2, .game-card__valorant{
     border-radius: 5px;
     width: 315px;
@@ -381,3 +392,4 @@ h1, h2, h3, .club-name {
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
+
